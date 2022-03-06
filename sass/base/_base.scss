@@ -1,0 +1,45 @@
+// variables
+:root {
+  // primary colors
+  --clr__primary-1: #66e2dc;
+  --clr__primary-2: #fa7453;
+  --clr__primary-3: #ffb964;
+  // neutral colors
+  --clr__neutral-1: #fcfaf9;
+  --clr__neutral-2: #191826;
+
+  // Fonts sizes
+  //titles desktop
+  --fs__h1-desktop: 5.5rem; //88px
+  --fs__h2-desktop: 2.5rem; //40px
+
+  //titles tablet
+  --fs__h1-tablet: 4rem; //64px
+  --fs__h2-tablet: 2rem; //32px
+
+  //titles mobile
+  --fs__h1-mobile: 2.5rem; //40px
+  --fs__h2-mobile: 2rem; //32px
+
+  //paragraph desktop
+  //Desktop
+  --fs-body-desktop-1: 1.25rem; //20px
+  --fs-body-desktop-2: 1rem; //16px
+
+  //Tablet
+  --fs__body-tablet: 1.125rem; //18px
+
+  //Mobile
+  --fs__body-mobile-1: 1rem; //16px
+  --fs__body-mobile-2: 1.125rem; //18px
+
+  // fonts weights
+  --regular: 400;
+  --bold: 700;
+
+  //Padding buttons
+  --padding-button: 1rem 1.5rem;
+
+  // boders
+  // --border:;
+}

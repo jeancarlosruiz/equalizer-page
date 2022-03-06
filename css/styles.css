@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list], li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+:root {
+  --clr__primary-1: #66e2dc;
+  --clr__primary-2: #fa7453;
+  --clr__primary-3: #ffb964;
+  --clr__neutral-1: #fcfaf9;
+  --clr__neutral-2: #191826;
+  --fs__h1-desktop: 5.5rem;
+  --fs__h2-desktop: 2.5rem;
+  --fs__h1-tablet: 4rem;
+  --fs__h2-tablet: 2rem;
+  --fs__h1-mobile: 2.5rem;
+  --fs__h2-mobile: 2rem;
+  --fs-body-desktop-1: 1.25rem;
+  --fs-body-desktop-2: 1rem;
+  --fs__body-tablet: 1.125rem;
+  --fs__body-mobile-1: 1rem;
+  --fs__body-mobile-2: 1.125rem;
+  --regular: 400;
+  --bold: 700;
+  --padding-button: 1rem 1.5rem;
+}
+
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 100%;
+}
+
+.header__intro-title {
+  font-size: var(--fs__h1-mobile);
+  font-weight: var(--bold);
+  text-align: left;
+  line-height: 3rem;
+  color: var(--clr__neutral-2);
+  letter-spacing: -0.0625rem;
+}
+@media screen and (min-width: 70rem) {
+  .header__intro-title {
+    font-size: var(--fs__h1-desktop);
+    line-height: 5.5rem;
+  }
+}
+
+.header__intro-p {
+  font-size: var(--fs__body-mobile-1);
+  font-weight: var(--regular);
+  text-align: left;
+  line-height: 1.625rem;
+  color: var(--clr__neutral-2);
+}
+
+.plan-premium__title {
+  font-size: var(--fs__h2-mobile);
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+}
+
+.plan-premium__p {
+  font-size: var(--fs__body-mobile-2);
+  color: var(--clr__neutral-1);
+  text-align: left;
+}
+
+.plan-premium__price {
+  display: flex;
+  align-items: center;
+  font-size: 4.0625rem;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+}
+.plan-premium__price::after {
+  content: "/month";
+  font-size: 1.25rem;
+  font-weight: var(--regular);
+  margin-left: 1rem;
+}
+
+.button span {
+  font-size: 1.125rem;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+}
+
+ul li {
+  font-size: 1rem;
+  color: var(--clr__neutral-2);
+}
+
+li a {
+  text-decoration: none;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-2);
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("/assets/bg-main-mobile.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  top: 0;
+  z-index: -1;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem 1.5rem;
+}
+.header .header__logo {
+  margin-bottom: 4rem;
+}
+.header .header__intro {
+  width: 100%;
+  max-width: 63.4375rem;
+}
+
+.header__intro-p {
+  margin-top: 1.25rem;
+}
+
+.plan {
+  width: 100%;
+  max-width: 70rem;
+  height: 37.5rem;
+  position: relative;
+  background-color: var(--clr__neutral-2);
+  margin: 6rem 0 24.375rem;
+  border-radius: 0.7rem;
+  z-index: 0;
+}
+.plan svg {
+  position: absolute;
+  transform: scale(0.9);
+  top: -1.45rem;
+  left: 10%;
+}
+.plan .plan__img {
+  width: 13rem;
+  position: absolute;
+  left: 50%;
+  top: 7.1875rem;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.plan .plan-premiun {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -20rem;
+  background-color: var(--clr__primary-2);
+  border-radius: 0.7rem;
+  padding: 3rem 2.25rem;
+}
+
+.footer {
+  width: 100%;
+  max-width: 70rem;
+  padding: 0 1.5rem;
+}
+.footer ul {
+  margin: 2rem 0 4rem;
+}
+.footer .icons {
+  width: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3.6875rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.button--ios {
+  background-color: var(--clr__neutral-2);
+  margin: 1rem 0;
+}
+.button--ios img {
+  width: 1.2rem;
+  margin-right: 0.4875rem;
+}
+
+.button--android {
+  background-color: var(--clr__neutral-1);
+}
+.button--android span {
+  color: var(--clr__neutral-2);
+}
+.button--android img {
+  width: 1.2rem;
+  margin-right: 0.4875rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

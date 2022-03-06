@@ -1,0 +1,28 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 3.6875rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.button--ios{
+    background-color: var(--clr__neutral-2);
+    margin: 1rem 0;
+    img{
+        width: 1.2rem;
+        margin-right: 0.4875rem;
+    }
+}
+
+.button--android{
+    background-color: var(--clr__neutral-1);
+    span{
+        color: var(--clr__neutral-2)
+    }
+    img{
+        width: 1.2rem;
+        margin-right: 0.4875rem;
+    }
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+html {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 100%;
+}
+
+// Main
+
+.header__intro-title {
+  font-size: var(--fs__h1-mobile);
+  font-weight: var(--bold);
+  text-align: left;
+  line-height: 3rem;
+  color: var(--clr__neutral-2);
+  letter-spacing: -0.0625rem;
+  @media screen and (min-width: 70rem) {
+    font-size: var(--fs__h1-desktop);
+    line-height: 5.5rem;
+  }
+}
+
+.header__intro-p {
+  font-size: var(--fs__body-mobile-1);
+  font-weight: var(--regular);
+  text-align: left;
+  line-height: 1.625rem;
+  color: var(--clr__neutral-2);
+}
+
+.plan-premium__title {
+  font-size: var(--fs__h2-mobile);
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+}
+
+.plan-premium__p {
+  font-size: var(--fs__body-mobile-2);
+  color: var(--clr__neutral-1);
+  text-align: left;
+}
+
+.plan-premium__price {
+  display: flex;
+  align-items: center;
+  font-size: 4.0625rem;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+  &::after{
+    content: '/month';
+    font-size: 1.25rem;
+    font-weight: var(--regular);
+    margin-left: 1rem;
+  }
+}
+
+// Buttons
+.button span{
+  font-size: 1.125rem;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-1);
+}
+
+// Footer
+
+ul li {
+  font-size: 1rem;
+  color: var(--clr__neutral-2);
+}
+
+li a {
+  text-decoration: none;
+  font-weight: var(--bold);
+  color: var(--clr__neutral-2);
+}
