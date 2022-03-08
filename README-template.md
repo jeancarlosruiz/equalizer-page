@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Jean-FrontEnd/equalizer-page](https://github.com/Jean-FrontEnd/equalizer-page)
+- Live Site URL: [https://jean-frontend.github.io/equalizer-page/](https://jean-frontend.github.io/equalizer-page/)
 
 ## My process
 
