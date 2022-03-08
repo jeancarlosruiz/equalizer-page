@@ -86,7 +86,7 @@ select {
   --fs__body-mobile-2: 1.125rem;
   --regular: 400;
   --bold: 700;
-  --padding-button: 1rem 1.5rem;
+  --padding-button: 1.2rem 3.6875rem;
 }
 
 html {
@@ -94,7 +94,7 @@ html {
   font-size: 100%;
 }
 
-.header__intro-title {
+.header__title {
   font-size: var(--fs__h1-mobile);
   font-weight: var(--bold);
   text-align: left;
@@ -102,19 +102,37 @@ html {
   color: var(--clr__neutral-2);
   letter-spacing: -0.0625rem;
 }
-@media screen and (min-width: 70rem) {
-  .header__intro-title {
+@media screen and (min-width: 46rem) {
+  .header__title {
+    font-size: var(--fs__h1-tablet);
+    line-height: 4rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .header__title {
     font-size: var(--fs__h1-desktop);
     line-height: 5.5rem;
   }
 }
 
-.header__intro-p {
+.header__p {
   font-size: var(--fs__body-mobile-1);
   font-weight: var(--regular);
   text-align: left;
   line-height: 1.625rem;
   color: var(--clr__neutral-2);
+}
+@media screen and (min-width: 46rem) {
+  .header__p {
+    font-size: var(--fs__body-tablet);
+    line-height: 1.75rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .header__p {
+    font-size: var(--fs-body-desktop-1);
+    line-height: 2.125rem;
+  }
 }
 
 .plan-premium__title {
@@ -122,11 +140,21 @@ html {
   font-weight: var(--bold);
   color: var(--clr__neutral-1);
 }
+@media screen and (min-width: 55rem) {
+  .plan-premium__title {
+    font-size: var(--fs__h2-desktop);
+  }
+}
 
 .plan-premium__p {
   font-size: var(--fs__body-mobile-2);
   color: var(--clr__neutral-1);
   text-align: left;
+}
+@media screen and (min-width: 55rem) {
+  .plan-premium__p {
+    font-size: var(--fs-body-desktop-2);
+  }
 }
 
 .plan-premium__price {
@@ -166,24 +194,53 @@ body::before {
   width: 100%;
   min-height: 100vh;
   background-image: url("../assets/bg-main-mobile.png");
-  background-position: top right;
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: top right;
   top: 0;
   z-index: -1;
+}
+@media screen and (min-width: 46rem) {
+  body::before {
+    background-image: url(../assets/bg-main-tablet.png);
+    right: 15%;
+    top: -10%;
+  }
+}
+@media screen and (min-width: 55rem) {
+  body::before {
+    background-image: url(../assets/bg-main-desktop.png);
+    min-height: 252vh;
+    right: 0%;
+    top: 0%;
+  }
 }
 
 body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+@media screen and (min-width: 46rem) {
+  body {
+    background: url(../assets/bg-pattern-1.svg) no-repeat;
+    background-position: right -2em top -2em;
+    background-size: 16.66rem;
+  }
+}
+
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 46rem) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .header {
   width: 100%;
-  max-width: 70rem;
   display: flex;
   flex-direction: column;
   padding: 2.5rem 1.5rem;
@@ -191,18 +248,24 @@ body {
 .header .header__logo {
   margin-bottom: 4rem;
 }
-.header .header__intro {
-  width: 100%;
-  max-width: 63.4375rem;
-}
-
-.header__intro-p {
+.header .header__p {
   margin-top: 1.25rem;
 }
 
+@media screen and (min-width: 46rem) {
+  .header {
+    padding: 2.5rem 0;
+  }
+  .header .header__title {
+    width: 70%;
+  }
+  .header .header__p {
+    width: 74%;
+    max-width: 52rem;
+  }
+}
 .plan {
   width: 100%;
-  max-width: 70rem;
   height: 37.5rem;
   position: relative;
   background-color: var(--clr__neutral-2);
@@ -210,11 +273,34 @@ body {
   border-radius: 0.7rem;
   z-index: 0;
 }
-.plan svg {
+@media screen and (min-width: 46rem) {
+  .plan {
+    margin: 10rem auto 12rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .plan {
+    margin: 20rem 0 12rem;
+  }
+}
+.plan .plan__img-bg {
   position: absolute;
   transform: scale(0.9);
   top: -1.45rem;
   left: 10%;
+}
+@media screen and (min-width: 46rem) {
+  .plan .plan__img-bg {
+    transform: scale(1);
+    left: 32%;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .plan .plan__img-bg {
+    transform: scale(1);
+    left: 25.5%;
+    top: -2rem;
+  }
 }
 .plan .plan__img {
   width: 13rem;
@@ -223,6 +309,20 @@ body {
   top: 7.1875rem;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+@media screen and (min-width: 46rem) {
+  .plan .plan__img {
+    width: 16.875rem;
+    left: 30%;
+    top: 11rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .plan .plan__img {
+    width: 19.5rem;
+    left: 20%;
+    top: 6rem;
+  }
 }
 .plan .plan-premiun {
   width: 100%;
@@ -233,43 +333,74 @@ body {
   background-color: var(--clr__primary-2);
   border-radius: 0.7rem;
   padding: 3rem 2.25rem;
+  z-index: 2;
+}
+@media screen and (min-width: 46rem) {
+  .plan .plan-premiun {
+    max-width: 24.9375rem;
+    left: 36%;
+    bottom: -8rem;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .plan .plan-premiun {
+    left: 40%;
+    bottom: -7.5rem;
+  }
 }
 
 .footer {
   width: 100%;
-  max-width: 70rem;
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 46rem) {
+  .footer {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 55rem) {
+  .footer .footer__rights {
+    width: 65%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
 }
 .footer ul {
+  max-width: 61%;
   margin: 2rem 0 4rem;
-}
-.footer .icons {
-  width: 6.25rem;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5rem;
 }
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem 3.6875rem;
+  padding: var(--padding-button);
   border-radius: 1rem;
   border: none;
+  cursor: pointer;
 }
 
 .button--ios {
   background-color: var(--clr__neutral-2);
   margin: 1rem 0;
+  transition: 0.2ms all ease-in;
 }
 .button--ios img {
   width: 1.2rem;
   margin-right: 0.4875rem;
+  align-self: flex-start;
+}
+.button--ios:hover {
+  background-color: var(--clr__primary-1);
 }
 
 .button--android {
   background-color: var(--clr__neutral-1);
+  transition: 0.2ms all ease-in;
 }
 .button--android span {
   color: var(--clr__neutral-2);
@@ -277,6 +408,28 @@ body {
 .button--android img {
   width: 1.2rem;
   margin-right: 0.4875rem;
+}
+.button--android:hover {
+  background-color: var(--clr__primary-3);
+}
+
+.icons {
+  width: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+@media screen and (min-width: 46rem) {
+  .icons {
+    align-self: flex-end;
+  }
+}
+.icons a {
+  cursor: pointer;
+  transition: 0.2ms all ease-in;
+}
+.icons a:hover {
+  filter: invert(57%) sepia(39%) saturate(2301%) hue-rotate(326deg) brightness(103%) contrast(102%);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -2,27 +2,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem 3.6875rem;
+    padding: var(--padding-button);
     border-radius: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 .button--ios{
     background-color: var(--clr__neutral-2);
     margin: 1rem 0;
+    transition: .200ms all ease-in;
     img{
         width: 1.2rem;
         margin-right: 0.4875rem;
+        align-self: flex-start;
+    }
+
+    &:hover{
+        background-color: var(--clr__primary-1);
     }
 }
 
 .button--android{
     background-color: var(--clr__neutral-1);
+    transition: .200ms all ease-in;
+
     span{
         color: var(--clr__neutral-2)
     }
     img{
         width: 1.2rem;
         margin-right: 0.4875rem;
+    }
+
+    &:hover{
+        background-color: var(--clr__primary-3);
     }
 }

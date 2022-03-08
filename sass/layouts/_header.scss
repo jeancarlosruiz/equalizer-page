@@ -1,18 +1,30 @@
 .header {
   width: 100%;
-  max-width: 70rem;
   display: flex;
   flex-direction: column;
   padding: 2.5rem 1.5rem;
+
   .header__logo {
     margin-bottom: 4rem;
   }
-  .header__intro {
-    width: 100%;
-    max-width: 63.4375rem;
+
+  .header__p {
+    margin-top: 1.25rem;
   }
 }
 
-.header__intro-p {
-  margin-top: 1.25rem;
+@media screen and (min-width: 46rem) {
+  .header {
+    padding: 2.5rem 0;
+
+
+    .header__title {
+      width: 70%;
+    }
+
+    .header__p {
+      width: 74%;
+      max-width: 52rem;
+    }
+  }
 }

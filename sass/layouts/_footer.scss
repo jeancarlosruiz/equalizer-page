@@ -1,15 +1,28 @@
-.footer{
-    width: 100%;
-    max-width: 70rem;
-    padding: 0 1.5rem;
-    ul{
-        margin: 2rem 0 4rem;
-    }
+.footer {
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
 
-    .icons{
-        width: 6.25rem;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5rem;
+  @media screen and (min-width: 46rem) {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 55rem) {
+    .footer__rights {
+      width: 65%;
+      display: inline-flex;
+      justify-content: space-between;
     }
+  }
+
+  ul {
+    max-width: 61%;
+    margin: 2rem 0 4rem;
+  }
+
+  
 }
+

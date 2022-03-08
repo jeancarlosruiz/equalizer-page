@@ -1,0 +1,18 @@
+.icons {
+  width: 6.25rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+
+  @media screen and (min-width: 46rem) {
+    align-self: flex-end;
+  }
+
+   a{
+    cursor: pointer;
+    transition: 0.2ms all ease-in;
+    &:hover {
+      filter: invert(57%) sepia(39%) saturate(2301%) hue-rotate(326deg) brightness(103%) contrast(102%);
+    }
+  }
+}

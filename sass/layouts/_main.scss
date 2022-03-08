@@ -1,33 +1,61 @@
 .plan {
   width: 100%;
-  max-width: 70rem;
   height: 37.5rem;
   position: relative;
   background-color: var(--clr__neutral-2);
-  margin: 6rem 0 24.375rem; //change in tablet and desktop version
+  margin: 6rem 0 24.375rem; 
   border-radius: 0.7rem;
   z-index: 0;
 
-  svg { //change in tablet and desktop version
+  @media screen and (min-width: 46rem) {
+    margin: 10rem auto 12rem;
+  }
+
+  @media screen and (min-width: 55rem) {
+    margin: 20rem 0 12rem;
+  }
+
+  .plan__img-bg {
     position: absolute;
     transform: scale(0.9);
     top: -1.45rem;
     left: 10%;
 
+    @media screen and (min-width: 46rem) {
+      transform: scale(1);
+      left: 32%;
+    }
+
+    @media screen and (min-width: 55rem) {
+      transform: scale(1);
+      left: 25.5%;
+      top: -2rem;
+    }
   }
 
-  .plan__img { //change in tablet and desktop version
+  .plan__img {
     width: 13rem;
     position: absolute;
     left: 50%;
     top: 7.1875rem;
     transform: translate(-50%, -50%);
     z-index: 1;
+
+    @media screen and (min-width: 46rem) {
+      width: 16.875rem;
+      left: 30%;
+      top: 11rem;
+    }
+
+    @media screen and (min-width: 55rem) {
+      width: 19.5rem;
+      left: 20%;
+      top: 6rem;
+    }
   }
 
-  .plan-premiun {//change in tablet and desktop version
+  .plan-premiun {
     width: 100%;
-    // max-width: 27.875rem; //move to a media
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -35,5 +63,17 @@
     background-color: var(--clr__primary-2);
     border-radius: 0.7rem;
     padding: 3rem 2.25rem;
+    z-index: 2;
+
+    @media screen and (min-width: 46rem) {
+      max-width: 24.9375rem;
+      left: 36%;
+      bottom: -8rem;
+    }
+
+    @media screen and (min-width: 55rem) {
+      left: 40%;
+      bottom: -7.5rem;
+    }
   }
 }

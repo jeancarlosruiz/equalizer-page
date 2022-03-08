@@ -7,37 +7,62 @@ html {
 
 // Main
 
-.header__intro-title {
+.header__title {
   font-size: var(--fs__h1-mobile);
   font-weight: var(--bold);
   text-align: left;
   line-height: 3rem;
   color: var(--clr__neutral-2);
   letter-spacing: -0.0625rem;
-  @media screen and (min-width: 70rem) {
+
+  @media screen and (min-width: 46rem) {
+    font-size: var(--fs__h1-tablet);
+    line-height: 4rem;
+  }
+
+  @media screen and (min-width: 55rem) {
     font-size: var(--fs__h1-desktop);
     line-height: 5.5rem;
   }
+  
 }
 
-.header__intro-p {
+.header__p {
   font-size: var(--fs__body-mobile-1);
   font-weight: var(--regular);
   text-align: left;
   line-height: 1.625rem;
   color: var(--clr__neutral-2);
+
+  @media screen and (min-width: 46rem) {
+    font-size: var(--fs__body-tablet);
+    line-height: 1.75rem;
+  }
+
+  @media screen and (min-width: 55rem) {
+    font-size: var(--fs-body-desktop-1);
+    line-height: 2.125rem;
+  }
 }
 
 .plan-premium__title {
   font-size: var(--fs__h2-mobile);
   font-weight: var(--bold);
   color: var(--clr__neutral-1);
+
+  @media screen and (min-width: 55rem) {
+    font-size: var(--fs__h2-desktop);
+  }
 }
 
 .plan-premium__p {
   font-size: var(--fs__body-mobile-2);
   color: var(--clr__neutral-1);
   text-align: left;
+
+  @media screen and (min-width: 55rem) {
+    font-size: var(--fs-body-desktop-2);
+  }
 }
 
 .plan-premium__price {
@@ -46,8 +71,8 @@ html {
   font-size: 4.0625rem;
   font-weight: var(--bold);
   color: var(--clr__neutral-1);
-  &::after{
-    content: '/month';
+  &::after {
+    content: "/month";
     font-size: 1.25rem;
     font-weight: var(--regular);
     margin-left: 1rem;
@@ -55,14 +80,13 @@ html {
 }
 
 // Buttons
-.button span{
+.button span {
   font-size: 1.125rem;
   font-weight: var(--bold);
   color: var(--clr__neutral-1);
 }
 
 // Footer
-
 ul li {
   font-size: 1rem;
   color: var(--clr__neutral-2);

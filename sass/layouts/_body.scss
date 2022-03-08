@@ -1,20 +1,37 @@
-body::before{
-    position: absolute;
-    content: "";
-    width: 100%;
-    min-height: 100vh;
-    background-image: url("../assets/bg-main-mobile.png");
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    top: 0;
-    z-index: -1;
+body::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top right;
+  top: 0;
+  z-index: -1;
+
+  @media screen and (min-width: 46rem) {
+    background-image: url(../assets/bg-main-tablet.png);
+    right: 15%;
+    top: -10%;
+  }
+
+  @media screen and (min-width: 55rem) {
+    background-image: url(../assets/bg-main-desktop.png);
+    min-height: 252vh;
+    right: 0%;
+    top: 0%;
+  }
 }
 
-body{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 46rem) {
+    background: url(../assets/bg-pattern-1.svg) no-repeat;
+    background-position: right -2em top -2em;
+    background-size: 16.66rem;
+  }
 }
