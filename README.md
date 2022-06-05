@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Jean-FrontEnd/equalizer-page](https://github.com/Jean-FrontEnd/equalizer-page)
-- Live Site URL: [https://jean-frontend.github.io/equalizer-page/](https://jean-frontend.github.io/equalizer-page/)
+- Solution URL: [https://github.com/Jeancarlosruiz/equalizer-page](https://github.com/jeancarlosruiz/equalizer-page)
+- Live Site URL: [https://jeancarlosruiz.github.io/equalizer-page/](https://jeancarlosruiz.github.io/equalizer-page/)
 
 ## My process
 
@@ -60,6 +60,6 @@ I also cut some background images to avoid horizontal scrolling.
 
 ## Author
 
-- Website - [Jean Ruiz](https://github.com/Jean-FrontEnd)
-- Frontend Mentor - [@Jean-FrontEnd](https://www.frontendmentor.io/profile/Jean-FrontEnd)
+- Website - [Jean Ruiz](https://github.com/Jeancarlosruiz)
+- Frontend Mentor - [@Jean-FrontEnd](https://www.frontendmentor.io/profile/jeancarlosruiz)
 - Twitter - [@jeanruizv10](https://twitter.com/JeanRuizV10)
